@@ -20,6 +20,7 @@ module.exports = function (_, { mode }) {
       watchContentBase: true,
       port: 9090,
       stats: 'errors-only',
+      host: '0.0.0.0'
     },
     output: {
       path: root('demo-dist'),

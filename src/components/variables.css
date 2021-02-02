@@ -13,6 +13,8 @@
   --dark-bg-color: #0b2840;
   --highlight-color: var(--primary-color);
   --secondary-color: #548f9e;
+  --api-default-color: #fd8a06;
+  --api-default-color-secondary: #d3c8bc;
   --logo-color: #27535e;
   --link-color: #42a0dd;
   --link-hover-color: #0262a0;
@@ -35,6 +37,8 @@
 
   --node-fill-color: #f6f8f8;
   --node-header-color: var(--secondary-color);
+  --node-api-header-color: var(--api-default-color);
+  --node-api-field-color: var(--api-default-color-secondary);
   --node-header-text-color: white;
 
   --edge-color: color(var(--secondary-color) l(- 15%));

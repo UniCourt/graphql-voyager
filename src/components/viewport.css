@@ -31,6 +31,26 @@ g.graph > polygon {
     }
   }
 
+  & .type-api {
+    & polygon {
+      fill: var(--node-api-header-color);
+    }
+
+    & text {
+      fill: var(--node-header-text-color);
+    }
+  }
+
+  & .edge-source-api {
+    & polygon {
+      fill: var(--node-api-field-color);
+    }
+
+    & .type-link{
+      fill: var(--node-api-header-color);
+    }
+  }
+
   &.selected polygon {
     stroke: var(--highlight-color);
     stroke-width: 3;

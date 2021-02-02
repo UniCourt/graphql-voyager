@@ -81,7 +81,13 @@ function preprocessVizSVG(svgString: string) {
     let [tag, ...restOfId] = $el.id.split('::');
     if (_.size(restOfId) < 1) return;
 
-    $el.classList.add(tag.toLowerCase().replace(/_/, '-'));
+    if ($el.id.match("^TYPE_TITLE.*APIs?")) {
+      $el.classList.add("type-api");
+    }
+
+    else {
+      $el.classList.add(tag.toLowerCase().replace(/_/, '-'));
+    }
   });
 
   forEachNode(svg, 'g.edge path', ($path) => {
@@ -97,7 +103,16 @@ function preprocessVizSVG(svgString: string) {
     //Remove spaces used for text alligment
     texts[1].remove();
 
-    if (edgesSources[$field.id]) $field.classList.add('edge-source');
+    if (edgesSources[$field.id]) {
+      if ($field.id.match("^FIELD.*APIs?")) {
+        $field.classList.add("edge-source-api");
+      }
+      else {
+        $field.classList.add('edge-source');
+      }
+      
+    }
+    
 
     for (var i = 2; i < texts.length; ++i) {
       var str = texts[i].innerHTML;

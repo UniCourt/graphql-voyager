@@ -14,6 +14,7 @@ module.exports = {
     watchContentBase: true,
     port: 9090,
     stats: 'errors-only',
+    host: "0.0.0.0",
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.mjs', '.js', '.json', '.css', '.svg'],
