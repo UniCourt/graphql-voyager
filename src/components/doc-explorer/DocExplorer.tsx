@@ -20,7 +20,7 @@ interface DocExplorerProps {
   onSelectEdge: (id: string) => void;
 }
 
-const initialNav = { title: 'Type List', type: null, searchValue: null };
+const initialNav = { title: 'API List', type: null, searchValue: null };
 
 export default class DocExplorer extends React.Component<DocExplorerProps> {
   state = { navStack: [initialNav], typeForInfoPopover: null };

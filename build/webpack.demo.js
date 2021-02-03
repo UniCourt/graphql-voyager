@@ -16,6 +16,7 @@ module.exports = function (_, { mode }) {
     },
     entry: ['./src/polyfills.ts', './demo/index.tsx'],
     devServer: {
+      disableHostCheck: true,
       contentBase: root('demo'),
       watchContentBase: true,
       port: 9090,

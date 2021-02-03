@@ -34,11 +34,10 @@
     }
 
     & > .title {
-      color: var(--logo-color);
+      color: #1F65AD;
       font-family: var(--base-font-family);
       letter-spacing: 5px;
       font-weight: normal;
-      text-transform: uppercase;
       margin: 0;
       font-size: 15px;
       margin-top: 4px;
