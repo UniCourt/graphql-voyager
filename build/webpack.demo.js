@@ -16,7 +16,7 @@ module.exports = function (_, { mode }) {
     },
     entry: ['./src/polyfills.ts', './demo/index.tsx'],
     devServer: {
-      disableHostCheck: true,
+      public: 'store-client-nestroia1.c9users.io'
       contentBase: root('demo'),
       watchContentBase: true,
       port: 9090,
