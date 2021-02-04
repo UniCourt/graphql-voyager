@@ -46,7 +46,7 @@ g.graph > polygon {
       fill: var(--node-api-field-color);
     }
 
-    & .type-link{
+    & type-link{
       fill: var(--node-api-header-color);
     }
   }

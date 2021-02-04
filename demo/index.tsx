@@ -4,7 +4,7 @@ import { MuiThemeProvider } from '@material-ui/core/styles';
 
 import { theme } from '../src/components/MUITheme';
 import { GraphQLVoyager } from '../src';
-import LogoIcon from './icons/logo-small.svg';
+// import LogoIcon from './icons/logo-small.png';
 
 // import { IntrospectionModal } from './IntrospectionModal';
 import { defaultPreset } from './presets';
@@ -69,9 +69,9 @@ class Logo extends React.Component {
       <div className="voyager-logo">
         <a href="https://unicourt.com" target="_blank">
           <div className="logo">
-            <LogoIcon />
+             <img src="./icons/logo.png" alt="UniCourt" width="40%" height="50%" />
             <h2 className="title">
-              <strong>Unicourt</strong>API
+              <strong>API</strong>
             </h2>
           </div>
         </a>
