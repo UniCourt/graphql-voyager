@@ -71,9 +71,6 @@ class Logo extends React.Component {
           <div className="logo">
              <img src="./icons/logo.png" alt="UniCourt" width="40%" height="50%" />
           </div>
-           <h2 className="title">
-              <strong>API</strong>
-           </h2>
         </a>
       </div>
     );
