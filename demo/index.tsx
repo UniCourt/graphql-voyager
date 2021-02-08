@@ -4,7 +4,7 @@ import { MuiThemeProvider } from '@material-ui/core/styles';
 
 import { theme } from '../src/components/MUITheme';
 import { GraphQLVoyager } from '../src';
-// import LogoIcon from './icons/logo-small.png';
+// import LogoIcon from './icons/logo-small.svg';
 
 // import { IntrospectionModal } from './IntrospectionModal';
 import { defaultPreset } from './presets';
