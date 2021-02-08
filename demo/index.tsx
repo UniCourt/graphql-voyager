@@ -70,10 +70,10 @@ class Logo extends React.Component {
         <a href="https://unicourt.com" target="_blank">
           <div className="logo">
              <img src="./icons/logo.png" alt="UniCourt" width="40%" height="50%" />
-            <h2 className="title">
-              <strong>API</strong>
-            </h2>
           </div>
+           <h2 className="title">
+              <strong>API</strong>
+           </h2>
         </a>
       </div>
     );
