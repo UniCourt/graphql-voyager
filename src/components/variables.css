@@ -13,12 +13,15 @@
   --dark-bg-color: #0b2840;
   --highlight-color: var(--primary-color);
   --secondary-color: #548f9e;
+  --api-default-color: #000;
+  --api-default-color-secondary: #d3c8bc;
   --logo-color: #27535e;
   --link-color: #42a0dd;
   --link-hover-color: #0262a0;
   --field-name-color: #224d6f;
   --builtin-color: #711c1c;
   --text-color: #666;
+  --unicourt-color: #2066AE;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --alert-color: #b71c1c;
 
@@ -35,6 +38,8 @@
 
   --node-fill-color: #f6f8f8;
   --node-header-color: var(--secondary-color);
+  --node-api-header-color: #fd8a06;
+  --node-api-field-color: var(--api-default-color-secondary);
   --node-header-text-color: white;
 
   --edge-color: color(var(--secondary-color) l(- 15%));

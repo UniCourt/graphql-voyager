@@ -16,10 +16,12 @@ module.exports = function (_, { mode }) {
     },
     entry: ['./src/polyfills.ts', './demo/index.tsx'],
     devServer: {
+      disableHostCheck: true,
       contentBase: root('demo'),
       watchContentBase: true,
       port: 9090,
       stats: 'errors-only',
+      host: '0.0.0.0'
     },
     output: {
       path: root('demo-dist'),

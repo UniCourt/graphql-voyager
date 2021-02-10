@@ -32,17 +32,17 @@
         height: 45px;
       }
     }
-
-    & > .title {
-      color: var(--logo-color);
+  }
+    & .title {
+      color: #1F65AD;
       font-family: var(--base-font-family);
       letter-spacing: 5px;
       font-weight: normal;
-      text-transform: uppercase;
       margin: 0;
       font-size: 15px;
       margin-top: 4px;
       line-height: 1;
+      text-align: center;
 
       & strong {
         display: block;
@@ -50,8 +50,6 @@
         font-size: 1.4em;
       }
     }
-  }
-
   & a,
   & a:hover {
     text-decoration: none;
