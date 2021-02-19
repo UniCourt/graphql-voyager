@@ -104,7 +104,7 @@ function preprocessVizSVG(svgString: string) {
     texts[1].remove();
 
     if (edgesSources[$field.id]) {
-      if ($field.id.match("^FIELD.*APIs?")) {
+      if ($field.id.match("^FIELD.*APIs?:")) {
         $field.classList.add("edge-source-api");
       }
       else {

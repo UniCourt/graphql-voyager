@@ -11,7 +11,6 @@ import { MuiThemeProvider } from '@material-ui/core/styles';
 
 import GraphViewport from './GraphViewport';
 import DocExplorer from './doc-explorer/DocExplorer';
-import PoweredBy from './utils/PoweredBy';
 import Settings from './settings/Settings';
 
 import './Voyager.css';
@@ -206,7 +205,6 @@ export default class Voyager extends React.Component<VoyagerProps> {
             onSelectNode={this.handleSelectNode}
             onSelectEdge={this.handleSelectEdge}
           />
-          <PoweredBy />
         </div>
       </div>
     );
