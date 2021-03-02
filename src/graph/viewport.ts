@@ -180,6 +180,7 @@ export class Viewport {
   }
 
   focusElement(id: string) {
+    this.selectNodeById(id);
     let bbBox = document.getElementById(id).getBoundingClientRect();
     let currentPan = this.zoomer.getPan();
     let viewPortSizes = (<any>this.zoomer).getSizes();
@@ -270,6 +271,10 @@ function edgeFrom(id: String) {
 function edgesFromNode($node) {
   var edges = [];
   forEachNode($node, '.edge-source', ($source) => {
+    const $edge = edgeFrom($source.id);
+    edges.push($edge);
+  });
+  forEachNode($node, '.edge-source-api', ($source) => {
     const $edge = edgeFrom($source.id);
     edges.push($edge);
   });

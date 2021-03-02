@@ -81,7 +81,7 @@ function preprocessVizSVG(svgString: string) {
     let [tag, ...restOfId] = $el.id.split('::');
     if (_.size(restOfId) < 1) return;
 
-    if ($el.id.match("^TYPE_TITLE.*APIs?")) {
+    if ($el.id.match("^TYPE_TITLE.*APIs?$")) {
       $el.classList.add("type-api");
     }
 
